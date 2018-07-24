@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?><html><style type="text/css">.t0{color:#ff0000;}.t1{color:#808080;}.i0{display:inline-block;vertical-align:text-bottom;margin-right:2px;background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGqSURBVDhPrVPPSwJBFJ51Z91VK4XUvHlQpG4dBD0EXor+Bg9BBEWHbt07dCvo4H8QdAiiU6dOGXTREPKSUawQtJegNolCy92m962bJIgK9cHOvHnz3pv341v2V0ju3kUul+OGYSxLkpQRQqRp57RX6aqsqup+rVZ761h20BMglUpN27Z9mLGbs3PtdzZjt5gsBLvjGrvkfnamjN2TWV7X9VLH41cAOPutdmXj4zmw+PnqantRUgJsV4tYpiQv1Ov1c+g8WJA2Xh7kDGQpq63mIyfxIB6Ph6CTsXDOVyjttfXWE44DEfuymOnhE7rXb5mmWXQyQMNQ86iALTU26x4ZSyQSV8WYKh4i0A8GbG6iHpFMJl/g62RA0FQmXHE4UDfFQi+6ASo1WXMEIyoN/IBbWUXZ4EY3QBlzHhWurcMFJwAYBpJgzsOg0+tH3lCDxALOTgCXnvk9NWxVuQ+qvoDztm+K2ZK0Smw0oHN4ANBMDXUyfHGqjM9jzrgIChvG7JqofOINsh1ftNHw8CVyPu549fmZwDBFUTapy1lqVBrddhuGmgs/L/8TGPsGqyfFmWv0DOkAAAAASUVORK5CYII=') no-repeat;width:16px;height:16px;background-size: 16px 16px;}</style><body /><div><div style="margin-left: 0px"><i class="i0"></i><span class="richText"><span>BankingSite.FunctionalUITests</span></span> <span class="richText"><span>(2 tests)</span></span> <span class="richText"><span class="t0">[0:00.488] Failed: 2 tests failed</span></span></div><div style="margin-left: 20px"><i class="i0"></i><span class="richText"><span>BankingSite.FunctionalUITests</span></span> <span class="richText"><span>(2 tests)</span></span> <span class="richText"><span class="t0">[0:00.488] Failed: 2 tests failed</span></span></div><div style="margin-left: 40px"><i class="i0"></i><span class="richText"><span>TestFixtureLifecycle</span></span> <span class="richText"><span>(2 tests)</span></span> <span class="richText"><span class="t0">[0:00.488] Failed: One or more child tests had errors: 2 tests failed</span></span><br /><span class="richText"><span class="t1">One or more child tests had errors
+TearDown : System.TypeInitializationException : The type initializer for 'BankingSite.FunctionalUITests.BrowserHost' threw an exception.
+  ----&gt; Autofac.Core.DependencyResolutionException : An exception was thrown while executing a resolve operation. See the InnerException for details. ---&gt; The geckodriver.exe file does not exist in the current directory or in a directory on the PATH environment variable. The driver can be downloaded at https://github.com/mozilla/geckodriver/releases. (See inner exception for details.)
+  ----&gt; OpenQA.Selenium.DriverServiceNotFoundException : The geckodriver.exe file does not exist in the current directory or in a directory on the PATH environment variable. The driver can be downloaded at https://github.com/mozilla/geckodriver/releases.
+--TearDown
+   at BankingSite.FunctionalUITests.TestFixtureLifecycle.Dispose() in C:\TestProject\end-to-end\BankingSite.FunctionalUITests\TestFixtureLifecycle.cs:line 12
+   at NUnit.Framework.Internal.Commands.DisposeFixtureCommand.&lt;&gt;c.&lt;.ctor&gt;b__0_0(TestExecutionContext context) in C:\src\nunit\nunit\src\NUnitFramework\framework\Internal\Commands\DisposeFixtureCommand.cs:line 52
+--DependencyResolutionException
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object&amp; instance) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at Autofac.ResolutionExtensions.Resolve[TService](IComponentContext context, IEnumerable`1 parameters) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at TestStack.Seleno.Configuration.SelenoApplication..ctor(IContainer container) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Configuration\SelenoApplication.cs:line 36
+   at TestStack.Seleno.Configuration.AppConfigurator.CreateApplication() in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Configuration\AppConfigurator.cs:line 49
+   at TestStack.Seleno.Configuration.SelenoHost.CreateApplication(Action`1 configure) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Configuration\SelenoHost.cs:line 104
+   at TestStack.Seleno.Configuration.SelenoHost.Run(Action`1 configure) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Configuration\SelenoHost.cs:line 0
+   at BankingSite.FunctionalUITests.BrowserHost..cctor() in C:\TestProject\end-to-end\BankingSite.FunctionalUITests\BrowserHost.cs:line 12
+--DriverServiceNotFoundException
+   at OpenQA.Selenium.DriverService.FindDriverServiceExecutable(String executableName, Uri downloadUrl)
+   at OpenQA.Selenium.Firefox.FirefoxDriverService.CreateDefaultService()
+   at OpenQA.Selenium.Firefox.FirefoxDriver..ctor(FirefoxOptions options)
+   at TestStack.Seleno.Configuration.BrowserFactory.&lt;&gt;c.&lt;FireFox&gt;b__4_0() in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Configuration\BrowserFactory.cs:line 73
+   at TestStack.Seleno.Configuration.WebDriverBuilder`1.CreateWebDriver() in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Configuration\WebDriverBuilder.cs:line 83
+   at TestStack.Seleno.Configuration.BrowserFactory.FireFox() in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Configuration\BrowserFactory.cs:line 73
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at Autofac.Builder.RegistrationBuilder.&lt;&gt;c__DisplayClass1`1.&lt;ForDelegate&gt;b__0(IComponentContext c, IEnumerable`1 p) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at Autofac.Core.Activators.Delegate.DelegateActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at Autofac.Core.Resolving.InstanceLookup.Execute() in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+
+</span></span></div><div style="margin-left: 60px"><i class="i0"></i><span class="richText"><span>LoanApplicationTests</span></span> <span class="richText"><span>(2 tests)</span></span> <span class="richText"><span class="t0">[0:00.466] Failed: One or more child tests had errors: 2 tests failed</span></span><br /><span class="richText"><span class="t1">One or more child tests had errors
+  Exception doesn't have a stacktrace
+
+</span></span></div><div style="margin-left: 80px"><i class="i0"></i><span class="richText"><span>ShouldAcceptLoanApplication</span></span> <span class="richText"><span class="t0">[0:00.455] Failed: System.TypeInitializationException : The type initializer for 'BankingSite.FunctionalUITests.BrowserHost' threw an exception.</span></span><br /><span class="richText"><span class="t1">System.TypeInitializationException : The type initializer for 'BankingSite.FunctionalUITests.BrowserHost' threw an exception.
+  ----&gt; Autofac.Core.DependencyResolutionException : An exception was thrown while executing a resolve operation. See the InnerException for details. ---&gt; The geckodriver.exe file does not exist in the current directory or in a directory on the PATH environment variable. The driver can be downloaded at https://github.com/mozilla/geckodriver/releases. (See inner exception for details.)
+  ----&gt; OpenQA.Selenium.DriverServiceNotFoundException : The geckodriver.exe file does not exist in the current directory or in a directory on the PATH environment variable. The driver can be downloaded at https://github.com/mozilla/geckodriver/releases.
+   at BankingSite.FunctionalUITests.LoanApplicationTests.ShouldAcceptLoanApplication() in C:\TestProject\end-to-end\BankingSite.FunctionalUITests\LoanApplicationTests.cs:line 14
+--DependencyResolutionException
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object&amp; instance) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at Autofac.ResolutionExtensions.Resolve[TService](IComponentContext context, IEnumerable`1 parameters) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at TestStack.Seleno.Configuration.SelenoApplication..ctor(IContainer container) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Configuration\SelenoApplication.cs:line 36
+   at TestStack.Seleno.Configuration.AppConfigurator.CreateApplication() in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Configuration\AppConfigurator.cs:line 49
+   at TestStack.Seleno.Configuration.SelenoHost.CreateApplication(Action`1 configure) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Configuration\SelenoHost.cs:line 104
+   at TestStack.Seleno.Configuration.SelenoHost.Run(Action`1 configure) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Configuration\SelenoHost.cs:line 0
+   at BankingSite.FunctionalUITests.BrowserHost..cctor() in C:\TestProject\end-to-end\BankingSite.FunctionalUITests\BrowserHost.cs:line 12
+--DriverServiceNotFoundException
+   at OpenQA.Selenium.DriverService.FindDriverServiceExecutable(String executableName, Uri downloadUrl)
+   at OpenQA.Selenium.Firefox.FirefoxDriverService.CreateDefaultService()
+   at OpenQA.Selenium.Firefox.FirefoxDriver..ctor(FirefoxOptions options)
+   at TestStack.Seleno.Configuration.BrowserFactory.&lt;&gt;c.&lt;FireFox&gt;b__4_0() in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Configuration\BrowserFactory.cs:line 73
+   at TestStack.Seleno.Configuration.WebDriverBuilder`1.CreateWebDriver() in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Configuration\WebDriverBuilder.cs:line 83
+   at TestStack.Seleno.Configuration.BrowserFactory.FireFox() in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Configuration\BrowserFactory.cs:line 73
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at Autofac.Builder.RegistrationBuilder.&lt;&gt;c__DisplayClass1`1.&lt;ForDelegate&gt;b__0(IComponentContext c, IEnumerable`1 p) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at Autofac.Core.Activators.Delegate.DelegateActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at Autofac.Core.Resolving.InstanceLookup.Execute() in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+
+</span></span></div><div style="margin-left: 80px"><i class="i0"></i><span class="richText"><span>ShouldDeclineLoanApplication</span></span> <span class="richText"><span class="t0">[0:00.001] Failed: System.TypeInitializationException : The type initializer for 'BankingSite.FunctionalUITests.BrowserHost' threw an exception.</span></span><br /><span class="richText"><span class="t1">System.TypeInitializationException : The type initializer for 'BankingSite.FunctionalUITests.BrowserHost' threw an exception.
+  ----&gt; Autofac.Core.DependencyResolutionException : An exception was thrown while executing a resolve operation. See the InnerException for details. ---&gt; The geckodriver.exe file does not exist in the current directory or in a directory on the PATH environment variable. The driver can be downloaded at https://github.com/mozilla/geckodriver/releases. (See inner exception for details.)
+  ----&gt; OpenQA.Selenium.DriverServiceNotFoundException : The geckodriver.exe file does not exist in the current directory or in a directory on the PATH environment variable. The driver can be downloaded at https://github.com/mozilla/geckodriver/releases.
+   at BankingSite.FunctionalUITests.LoanApplicationTests.ShouldDeclineLoanApplication() in C:\TestProject\end-to-end\BankingSite.FunctionalUITests\LoanApplicationTests.cs:line 37
+--DependencyResolutionException
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object&amp; instance) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at Autofac.ResolutionExtensions.Resolve[TService](IComponentContext context, IEnumerable`1 parameters) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at TestStack.Seleno.Configuration.SelenoApplication..ctor(IContainer container) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Configuration\SelenoApplication.cs:line 36
+   at TestStack.Seleno.Configuration.AppConfigurator.CreateApplication() in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Configuration\AppConfigurator.cs:line 49
+   at TestStack.Seleno.Configuration.SelenoHost.CreateApplication(Action`1 configure) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Configuration\SelenoHost.cs:line 104
+   at TestStack.Seleno.Configuration.SelenoHost.Run(Action`1 configure) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Configuration\SelenoHost.cs:line 0
+   at BankingSite.FunctionalUITests.BrowserHost..cctor() in C:\TestProject\end-to-end\BankingSite.FunctionalUITests\BrowserHost.cs:line 12
+--DriverServiceNotFoundException
+   at OpenQA.Selenium.DriverService.FindDriverServiceExecutable(String executableName, Uri downloadUrl)
+   at OpenQA.Selenium.Firefox.FirefoxDriverService.CreateDefaultService()
+   at OpenQA.Selenium.Firefox.FirefoxDriver..ctor(FirefoxOptions options)
+   at TestStack.Seleno.Configuration.BrowserFactory.&lt;&gt;c.&lt;FireFox&gt;b__4_0() in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Configuration\BrowserFactory.cs:line 73
+   at TestStack.Seleno.Configuration.WebDriverBuilder`1.CreateWebDriver() in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Configuration\WebDriverBuilder.cs:line 83
+   at TestStack.Seleno.Configuration.BrowserFactory.FireFox() in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Configuration\BrowserFactory.cs:line 73
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at Autofac.Builder.RegistrationBuilder.&lt;&gt;c__DisplayClass1`1.&lt;ForDelegate&gt;b__0(IComponentContext c, IEnumerable`1 p) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at Autofac.Core.Activators.Delegate.DelegateActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at Autofac.Core.Resolving.InstanceLookup.Execute() in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters) in C:\ConsoleBuildAgent\work\6625a30e8ee728ba\src\TestStack.Seleno\Extensions\EnumerableExtensions.cs:line 0
+
+</span></span></div><div style="margin-left: 0px"><i class="i0"></i><span class="richText"><span>BankingSite.IntegrationTests</span></span> <span class="richText"><span>(5 tests)</span></span> <span class="richText"><span class="t0">[2:42.005] Failed: 4 tests failed</span></span></div><div style="margin-left: 20px"><i class="i0"></i><span class="richText"><span>BankingSite.IntegrationTests</span></span> <span class="richText"><span>(5 tests)</span></span> <span class="richText"><span class="t0">[2:42.005] Failed: 4 tests failed</span></span></div><div style="margin-left: 40px"><i class="i0"></i><span class="richText"><span>TestFixtureLifecycle</span></span> <span class="richText"><span>(1 test)</span></span> <span class="richText"><span class="t0">[1:37.341] Failed: One or more child tests had errors</span></span><br /><span class="richText"><span class="t1">One or more child tests had errors
+  Exception doesn't have a stacktrace
+
+</span></span></div><div style="margin-left: 60px"><i class="i0"></i><span class="richText"><span>RepositoryTests</span></span> <span class="richText"><span class="t0">[1:04.663] Failed: One or more child tests had errors: 4 tests failed</span></span><br /><span class="richText"><span class="t1">One or more child tests had errors
+  Exception doesn't have a stacktrace
+
+</span></span></div><div style="margin-left: 40px"><i class="i0"></i><span class="richText"><span>RepositoryTests</span></span> <span class="richText"><span>(4 tests)</span></span> <span class="richText"><span class="t0">[1:04.663] Failed: One or more child tests had errors: 4 tests failed</span></span><br /><span class="richText"><span class="t1">One or more child tests had errors
+  Exception doesn't have a stacktrace
+
+</span></span></div><div style="margin-left: 60px"><i class="i0"></i><span class="richText"><span>ShouldNotCreateEmptyLoanApplication</span></span> <span class="richText"><span class="t0">[0:48.458] Failed: System.Data.SqlClient.SqlException : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)</span></span><br /><span class="richText"><span class="t1">System.Data.SqlClient.SqlException : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+  ----&gt; System.ComponentModel.Win32Exception : The network path was not found
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.&lt;&gt;c__DisplayClass1.&lt;Execute&gt;b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingMasterConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.CreateDatabaseFromScript(Nullable`1 commandTimeout, DbConnection sqlConnection, String createDatabaseScript)
+   at System.Data.Entity.SqlServer.SqlProviderServices.DbCreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Migrations.Utilities.DatabaseCreator.Create(DbConnection connection)
+   at System.Data.Entity.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.DbMigrator.Update(String targetMigration)
+   at System.Data.Entity.Internal.DatabaseCreator.CreateDatabase(InternalContext internalContext, Func`3 createMigrator, ObjectContext objectContext)
+   at System.Data.Entity.Database.Create(DatabaseExistenceState existenceState)
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Add(Object entity)
+   at System.Data.Entity.DbSet`1.Add(TEntity entity)
+   at BankingSite.Models.Repository.Create(LoanApplication application) in C:\TestProject\end-to-end\BankingSite\Models\Repository.cs:line 9
+   at BankingSite.IntegrationTests.RepositoryTests.ShouldNotCreateEmptyLoanApplication() in C:\TestProject\end-to-end\BankingSite.IntegrationTests\RepositoryTests.cs:line 61
+--Win32Exception
+
+
+</span></span></div><div style="margin-left: 60px"><i class="i0"></i><span class="richText"><span>ShouldPopulateIdOnCreateLoanApplication</span></span> <span class="richText"><span class="t0">[0:16.172] Failed: System.Data.SqlClient.SqlException : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)</span></span><br /><span class="richText"><span class="t1">System.Data.SqlClient.SqlException : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+  ----&gt; System.ComponentModel.Win32Exception : The network path was not found
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.&lt;&gt;c__DisplayClass1.&lt;Execute&gt;b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingMasterConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.CreateDatabaseFromScript(Nullable`1 commandTimeout, DbConnection sqlConnection, String createDatabaseScript)
+   at System.Data.Entity.SqlServer.SqlProviderServices.DbCreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Migrations.Utilities.DatabaseCreator.Create(DbConnection connection)
+   at System.Data.Entity.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.DbMigrator.Update(String targetMigration)
+   at System.Data.Entity.Internal.DatabaseCreator.CreateDatabase(InternalContext internalContext, Func`3 createMigrator, ObjectContext objectContext)
+   at System.Data.Entity.Database.Create(DatabaseExistenceState existenceState)
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Add(Object entity)
+   at System.Data.Entity.DbSet`1.Add(TEntity entity)
+   at BankingSite.Models.Repository.Create(LoanApplication application) in C:\TestProject\end-to-end\BankingSite\Models\Repository.cs:line 9
+   at BankingSite.IntegrationTests.RepositoryTests.ShouldPopulateIdOnCreateLoanApplication() in C:\TestProject\end-to-end\BankingSite.IntegrationTests\RepositoryTests.cs:line 23
+--Win32Exception
+
+
+</span></span></div><div style="margin-left: 60px"><i class="i0"></i><span class="richText"><span>ShouldRetrieveCreatedApplication</span></span> <span class="richText"><span class="t0">[0:00.009] Failed: System.Data.SqlClient.SqlException : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)</span></span><br /><span class="richText"><span class="t1">System.Data.SqlClient.SqlException : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+  ----&gt; System.ComponentModel.Win32Exception : The network path was not found
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.&lt;&gt;c__DisplayClass1.&lt;Execute&gt;b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingMasterConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.CreateDatabaseFromScript(Nullable`1 commandTimeout, DbConnection sqlConnection, String createDatabaseScript)
+   at System.Data.Entity.SqlServer.SqlProviderServices.DbCreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Migrations.Utilities.DatabaseCreator.Create(DbConnection connection)
+   at System.Data.Entity.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.DbMigrator.Update(String targetMigration)
+   at System.Data.Entity.Internal.DatabaseCreator.CreateDatabase(InternalContext internalContext, Func`3 createMigrator, ObjectContext objectContext)
+   at System.Data.Entity.Database.Create(DatabaseExistenceState existenceState)
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Add(Object entity)
+   at System.Data.Entity.DbSet`1.Add(TEntity entity)
+   at BankingSite.Models.Repository.Create(LoanApplication application) in C:\TestProject\end-to-end\BankingSite\Models\Repository.cs:line 9
+   at BankingSite.IntegrationTests.RepositoryTests.ShouldRetrieveCreatedApplication() in C:\TestProject\end-to-end\BankingSite.IntegrationTests\RepositoryTests.cs:line 42
+--Win32Exception
+
+
+</span></span></div><div style="margin-left: 60px"><i class="i0"></i><span class="richText"><span>ShouldReturnNullWhenIdNotExists</span></span> <span class="richText"><span class="t0">[0:00.010] Failed: System.Data.SqlClient.SqlException : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)</span></span><br /><span class="richText"><span class="t1">System.Data.SqlClient.SqlException : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+  ----&gt; System.ComponentModel.Win32Exception : The network path was not found
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.&lt;&gt;c__DisplayClass1.&lt;Execute&gt;b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingMasterConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.CreateDatabaseFromScript(Nullable`1 commandTimeout, DbConnection sqlConnection, String createDatabaseScript)
+   at System.Data.Entity.SqlServer.SqlProviderServices.DbCreateDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Migrations.Utilities.DatabaseCreator.Create(DbConnection connection)
+   at System.Data.Entity.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.DbMigrator.Update(String targetMigration)
+   at System.Data.Entity.Internal.DatabaseCreator.CreateDatabase(InternalContext internalContext, Func`3 createMigrator, ObjectContext objectContext)
+   at System.Data.Entity.Database.Create(DatabaseExistenceState existenceState)
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Find(Object[] keyValues)
+   at BankingSite.Models.Repository.Find(Int32 id) in C:\TestProject\end-to-end\BankingSite\Models\Repository.cs:line 18
+   at BankingSite.IntegrationTests.RepositoryTests.ShouldReturnNullWhenIdNotExists() in C:\TestProject\end-to-end\BankingSite.IntegrationTests\RepositoryTests.cs:line 69
+--Win32Exception
+
+
+</span></span></div></div></html>
